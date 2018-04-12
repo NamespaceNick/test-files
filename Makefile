@@ -35,14 +35,14 @@ cleanall:
 	@echo "All files successfully cleaned."
 
 c:
-	@gcc ctest_file.c -o ctest_file
-	@./ctest_file
-	@rm -v ctest_file
+	@gcc ctest_file.c -o runc
+	@./runc
+	@rm -v runc
 
 cpp:
-	@g++ --std=c++1z cpptest_file.cpp -o cpptest_file
-	@./cpptest_file
-	@rm -v cpptest_file
+	@g++ --std=c++1z cpptest_file.cpp -o runcpp
+	@./runcpp
+	@rm -v runcpp
 
 python:
 	@python3 ptest_file.py
