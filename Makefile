@@ -37,12 +37,12 @@ cleanall:
 c:
 	@gcc ctest_file.c -o runc
 	@./runc
-	@rm -v runc
+	@rm runc
 
 cpp:
 	@g++ --std=c++1z cpptest_file.cpp -o runcpp
 	@./runcpp
-	@rm -v runcpp
+	@rm runcpp
 
 python:
 	@python3 ptest_file.py
@@ -53,7 +53,7 @@ python2:
 rust:
 	@rustc rtest_file.rs
 	@./rtest_file
-	@rm -v rtest_file
+	@rm rtest_file
 
 sh:
 	@bash shtest_file.sh
