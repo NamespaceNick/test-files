@@ -1,8 +1,8 @@
 # Makefile for test-files
 help: 
-	@echo "Clean commands:\n\tcclean cppclean pclean rclean shclean cleanall\n" 
-	@echo "Build commands:\n\tc cpp python rust sh\n"
-	@echo "Overwrite commands:\n\tsavecpp savec savep\n"
+	@echo -e "Clean commands:\n\tcclean cppclean pclean rclean shclean cleanall\n" 
+	@echo -e "Build commands:\n\tc cpp python rust sh\n"
+	@echo -e "Overwrite commands:\n\tsavecpp savec savep\n"
 cclean:
 	@rm -v ctest_file.c
 	@cp clean-files/ctest_file.c .
@@ -74,4 +74,4 @@ savep:
 	@echo "Saved current test py file to clean-files.."
 
 .PHONY: cclean cppclean pclean rclean shclean cleanall c cpp \
-	python rust sh savecpp savec savep
+	python rust sh savecpp savec savep runc
