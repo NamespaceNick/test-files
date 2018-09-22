@@ -44,7 +44,7 @@ cpp:
 	@./runcpp
 	@rm runcpp
 
-python:
+p:
 	@python3 ptest_file.py
 
 python2:
