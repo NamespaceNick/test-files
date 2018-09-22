@@ -1,5 +1,7 @@
 // Test file for C++ inquiries
 
+#include <algorithm>
+#include <fstream>
 #include <iostream>
 #include <numeric>
 #include <queue>
